@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>RS Lambang Medika</title>
+
+  <!-- Styles & Fonts -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous" />
+  <link href="https://cdn.statically.io/gh/Loopple/loopple-public-assets/main/soft-ui-design-system/css/soft-ui-design-system.css" rel="stylesheet" />
+    
+  <!-- Font Awesome (Fixed, no integrity check) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+  <!-- Bootstrap CSS -->
+  <style>
+  html {
+      scroll-behavior: smooth;
+  }
+  </style>
+</head>
+<body data-framework="bootstrap5">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm border-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/img/logo.png" width="50" alt="Logo RS Lambang Medika" />
+        <span class="fw-bold">RS Lambang Medika</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" title="Toggle navigation" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2"><a class="nav-link" href="#Home">Home</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#Services">Services</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#Doctor">Doctors</a></li>
+          <li class="nav-item mx-2"><a class="btn btn-sm bg-gradient-info text-white" href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="Home" class="min-vh-75 d-flex align-items-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 class="text-gradient text-info">Welcome to</h1>
+          <h1 class="mb-4 fw-bold">RS Lambang Medika</h1>
+          <p class="lead">We are here to provide the best health services for you and your family with complete facilities and professional medical personnel.</p>
+          <div class="buttons">
+            <a href="#kontak" class="btn btn-dark mt-3">Register Now</a>
+            <a href="https://www.youtube.com/watch?v=bVxo4VNRnKg" target="_blank" rel="noopener" class="btn btn-outline-dark mt-3">Watch Profile Video</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/img/hospital.jpg" class="img-fluid rounded shadow" alt="Hospital" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section id="Services" class="py-5">
+    <div class="container text-center">
+      <h3 class="mb-5">Featured Services</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fas fa-ambulance fa-3x text-info mb-3"></i>
+          <h5>24/7 Emergency</h5>
+          <p>Quick response for emergency situations, available at all times.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-user-md fa-3x text-info mb-3"></i>
+          <h5>Specialist Doctors</h5>
+          <p>Professional medical team from various specialties.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-hospital fa-3x text-info mb-3"></i>
+          <h5>Inpatient & Outpatient</h5>
+          <p>Complete facilities for comfortable and optimal care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctor Schedule -->
+  <section id="Doctor" class="py-5 bg-light">
+    <div class="container">
+      <h3 class="text-center mb-4">Doctor Schedule</h3>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Doctor Name</th>
+            <th>Specialty</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>dr. Andi Surya</td>
+            <td>Pediatrics</td>
+            <td>Monday - Wednesday</td>
+            <td>08.00 - 12.00</td>
+          </tr>
+          <tr>
+            <td>dr. Lestari Dewi</td>
+            <td>Obstetrics</td>
+            <td>Tuesday - Thursday</td>
+            <td>10.00 - 14.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="Contact" class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Registration / Comment Form</h3>
+      <form action="#" method="post" class="mx-auto custom-form-width">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message / Comment</label>
+          <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-info text-white">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-info text-white text-center">
+    <div class="container">
+      <p class="mb-1 fw-bold fs-5">RS Lambang Medika</p>
+      <p class="mb-2">
+        Jl. Kesehatan No.123, Pagaden, Subang, Jawa Barat<br>
+        Telp: (021) 123-45678
+      </p>
+      <div class="mb-3">
+        <a href="#" class="text-white mx-2" title="Facebook">
+          <i class="fab fa-facebook-f fa-lg"></i>
+        </a>
+        <a href="#" class="text-white mx-2" title="Instagram">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="#" class="text-white mx-2" title="Twitter">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+      </div>
+      <p class="mb-0">&copy; 2025 RS Lambang Medika. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <style>
+    .custom-form-width {
+      max-width: 600px;
+    }
+  </style>
+</body>
+</html>
